@@ -1,0 +1,6 @@
+{
+  "name": "ALTER",
+  "description": "Inclusive Learning Studio with accessible reading, communication, phonics mnemonics, sign-language and Silent Voice tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

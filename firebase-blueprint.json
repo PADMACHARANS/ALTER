@@ -1,0 +1,32 @@
+{
+  "entities": {
+    "User": {
+      "title": "User Profile",
+      "description": "Information about an authenticated learner's preferences and progress",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The unique Firebase Auth user ID" },
+        "email": { "type": "string", "description": "User email address" },
+        "displayName": { "type": "string", "description": "Publicly visible username" },
+        "photoURL": { "type": "string", "description": "URL of the user's selected avatar/photo" },
+        "fullName": { "type": "string", "description": "Real full name of the user" },
+        "preferredLanguage": { "type": "string", "description": "The user's preferred language for translation or instructions" },
+        "learningLevel": { "type": "string", "enum": ["Beginner", "Intermediate", "Advanced"], "description": "Current learning level in ASL" },
+        "guidelinesAccepted": { "type": "boolean", "description": "Whether the user accepted the safety guidelines" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the profile was created" },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "When the profile was last modified" },
+        "progress": {
+          "type": "object",
+          "description": "Progress mapping storing completed lesson statuses and sign achievements"
+        }
+      },
+      "required": ["uid", "email", "displayName", "fullName", "guidelinesAccepted", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User-specific profiles, statistics, preferences and progress records"
+    }
+  }
+}

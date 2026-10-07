@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="0"
+        android:translateY="0">
+        <!-- Open book back shadow -->
+        <path
+            android:fillColor="#1A000000"
+            android:pathData="M30,73 C38,69 48,70 54,74 C60,70 70,69 78,73 L78,75 C70,71 60,72 54,76 C48,72 38,71 30,75 Z" />
+
+        <!-- Book Left Page (Warm Ivory White) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M30,42 C38,38 48,39 53,43 L53,70 C48,66 38,65 30,69 Z" />
+
+        <!-- Book Right Page (Slightly softer Ivory) -->
+        <path
+            android:fillColor="#F1F5F9"
+            android:pathData="M55,43 C60,39 70,38 78,42 L78,69 C70,65 60,66 55,70 Z" />
+
+        <!-- Book spine / center fold -->
+        <path
+            android:fillColor="#CBD5E1"
+            android:pathData="M53.5,43 L54.5,43 L54.5,71 L53.5,71 Z" />
+
+        <!-- Left Page Dyslexic Reader Line markers (Teal/Indigo) -->
+        <path
+            android:fillColor="#6366F1"
+            android:pathData="M35,48 L48,48 A1.5,1.5 0 0,1 48,51 L35,51 A1.5,1.5 0 0,1 35,48 Z" />
+        <path
+            android:fillColor="#818CF8"
+            android:pathData="M35,54 L46,54 A1.5,1.5 0 0,1 46,57 L35,57 A1.5,1.5 0 0,1 35,54 Z" />
+        <path
+            android:fillColor="#A5B4FC"
+            android:pathData="M35,60 L44,60 A1.5,1.5 0 0,1 44,63 L35,63 A1.5,1.5 0 0,1 35,60 Z" />
+
+        <!-- Right Page Reading Lines (Cyan/Emerald) -->
+        <path
+            android:fillColor="#0D9488"
+            android:pathData="M60,48 L73,48 A1.5,1.5 0 0,1 73,51 L60,51 A1.5,1.5 0 0,1 60,48 Z" />
+        <path
+            android:fillColor="#14B8A6"
+            android:pathData="M60,54 L71,54 A1.5,1.5 0 0,1 71,57 L60,57 A1.5,1.5 0 0,1 60,54 Z" />
+        <path
+            android:fillColor="#5EEAD4"
+            android:pathData="M60,60 L68,60 A1.5,1.5 0 0,1 68,63 L60,63 A1.5,1.5 0 0,1 60,60 Z" />
+
+        <!-- Shining Guiding Star / Insight Spark (Amber Gold) -->
+        <path
+            android:fillColor="#FBBF24"
+            android:pathData="M54,26 L56,31 L61,33 L56,35 L54,40 L52,35 L47,33 L52,31 Z" />
+
+        <!-- Speech / Audio sound waves (representing TTS & Silent Voice) -->
+        <path
+            android:fillColor="#F59E0B"
+            android:pathData="M67,31 C69,33 70,36 70,39 C70,42 69,44 67,46"
+            android:strokeWidth="2.2"
+            android:strokeColor="#F59E0B"
+            android:strokeLineCap="round" />
+        <path
+            android:fillColor="#FDE047"
+            android:pathData="M73,28 C76,31 77,35 77,39 C77,43 76,47 73,50"
+            android:strokeWidth="2.2"
+            android:strokeColor="#FDE047"
+            android:strokeLineCap="round" />
+
+        <!-- Gentle Dyslexia Focus reading indicator dot -->
+        <path
+            android:fillColor="#38BDF8"
+            android:pathData="M39,34 A2,2 0 1,1 35,34 A2,2 0 1,1 39,34" />
+    </group>
+</vector>
